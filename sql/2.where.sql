@@ -79,7 +79,16 @@
 -- SELECT * FROM movies_movie
 -- WHERE title LIKE '%g__d%';
 
+-- Movie.objects.filter(year__in=[2002, 2001, 2002])
+-- SELECT * FROM movies_movie
+-- WHERE year IN (2000, 2001, 2002);
 
+-- User.objects.filter(age__range=[20,30])
+-- SELECT * FROM movies_user
+-- WHERE age BETWEEN 20 AND 30;
 
+-- UPDATE movies_actor
+-- SET age=100
+-- WHERE id BETWEEN 1 AND 10;
 
-
+SELECT * FROM movies_actor;
